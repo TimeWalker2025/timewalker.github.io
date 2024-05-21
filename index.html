@@ -145,8 +145,7 @@
                 <img src="./static/teaser/teaser.jpg" height="150%" />
                 <h2 class=" subtitle has-text-centered" style="padding-top: 10px">
                     <p align="left">
-                    We present MonoNPHM, a neural-field-based parametric head model with disentangled latent space for geometry, expression and appearance (left).
-                    MonoNPHM allows for 3D head tracking given only a monocular RGB video by optimizing for latent codes using SDF-based volumetric rendering (right).
+                    TimeWalker
                     </p>
                 </h2>
             </div>
@@ -221,14 +220,22 @@
                     <h2 class="title is-3">Abstract</h2>
                     <div class="content has-text-justified">
                         <p margin="0">
-                            We present Monocular Neural Parametric Head Models (MonoNPHM) for dynamic 3D head reconstructions from monocular RGB videos.
-                            To this end, we propose a latent appearance space that parameterizes a texture field on top of a neural parametric model.
-                            We constrain predicted color values to be correlated with the underlying geometry such that gradients from RGB effectively influence latent geometry codes during inverse rendering.
-                            To increase the representational capacity of our expression space, we augment our backward deformation field with hyper-dimensions, thus improving color and geometry representation in topologically challenging expressions.
-                            Using MonoNPHM as a learned prior, we approach the task of 3D head reconstruction using signed distance field based volumetric rendering.
-                            By numerically inverting our backward deformation field, we incorporated a landmark loss using facial anchor points that are closely tied to our canonical geometry representation.
-                            To evaluate the task of dynamic face reconstruction from monocular RGB videos we record 20 challenging Kinect sequences under casual conditions.
-                            MonoNPHM outperforms all baselines with a significant margin, and makes an important step towards easily accessible neural parametric face models through RGB tracking.                    </div>
+                           We present TimeWalker, a new framework that models realistic, full-scale 3D head avatars of a person on lifelong scale. 
+			   Unlike current human head avatar pipelines that capture a person's identity only at the momentary level (i.e., instant photography, or short videos), 
+			   TimeWalker constructs a person's comprehensive identity from unstructured data collection over his/her various life stages, offering a paradigm to achieve 
+			   full reconstruction and animation of that person at different moments of life.  At the heart of TimeWalker's success is a novel neural parametric model that 
+			  learns personalized representation with the disentanglement of shape, expression, and appearance across ages. Central to our methodology are the concepts of 
+			   two aspects: $(1)$ We track back to the principle of modeling a person's identity in an additive combination of his/her average head representation in the canonical 
+			  space, and moment-specific head attribute representations driven from a set of neural head basis. To learn the set of head basis that could represent the comprehensive head 
+			  variations of the target person in a compact manner, we propose  a {\textbf{Dy}namic {\textbf{N}eural} B{\textbf{a}}sis-Blending {\textbf{Mo}}dule (\textbf{Dynamo}). 
+			  It dynamically adjusts the number and blend weights of neural head bases, according to both shared and specific traits of the target person over ages. 
+			  $(2)$ We introduce {\textbf{D}}y{\textbf{na}}mic {\textbf2D G}}aussian {\textbf{S}}platting (\textbf{DNA-2DGS}), an extension of Gaussian splatting representation, to model 
+			 head motion deformations like facial expressions without losing the realism of rendering and reconstruction of full head. 
+			DNA-2DGS includes a set of controllable 2D oriented planar Gaussian disks that utilize the priors from a parametric morphable face model, and move/rotate with the change of expression. 
+			Furthermore, we construct a large-scale head dataset~{\textbf{TimeWalker-1.0}}, with over $1.18M$ high-quality head images of  $20$ celebrities' lifelong photo collections. 
+			The data volume ranges from $10K$ to $100K$ for each celebrity, with diverse variations over different life stages  (\textit{e.g.,} shape, headpose, expression, and appearance). 
+			Through extensive experimental evaluations, we show TimeWalker's ability to reconstruct and animate avatars across decoupled dimensions with realistic rendering effects, 
+			demonstrating a way to achieve personalized ~``time traveling'' in a breeze.                   </div>
                 </div>
             </div>
 
