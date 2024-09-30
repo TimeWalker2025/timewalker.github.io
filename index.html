@@ -480,13 +480,16 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3" style="text-align: center">Comparsion</h2>
+        <h2 class="title is-3" style="text-align: center">Comparsion with SOTA Methods</h2>
+          <h2 class="title is-5" style="text-align: center">"1" means: One model for each identity, encompassing multiple appearances</h2>
+          <h2 class="title is-5" style="text-align: center">"N" means: N models for each identity, one model for each appearance</h2>
 
           <img src="./static/images/fig_main_comp_1v1.png" width="98%" align="center"/>
-          <h2 class="title is-5" style="text-align: center">Qualitative comparison with SOTA with #Protocol-1: 1 vs 1</h2>
+          <h2 class="title is-5" style="text-align: center">#Protocol-1 (1 vs 1): For all methods, we train one separate model for each identity.</h2>
+
 
           <img src="./static/images/fig_main_comp_1vn.png" width="98%" align="center"/>
-          <h2 class="title is-5" style="text-align: center">Qualitative comparison with SOTA with #Protocol-1: 1 vs N</h2>
+          <h2 class="title is-5" style="text-align: center">#Protocol-2 (1 vs N): For our method, we train one model for each identity; For the SOTA models, we train N models for each identity(one for each appearance).</h2>
    
 
       </div>
@@ -508,7 +511,7 @@
         <h2 class="title is-3" style="text-align: center">Downstream Application</h2>
 
           <h2 class="title is-5" style="text-align: center">3D Editted result produced by <a href="https://silent-chen.github.io/DGE/"  target="_blank" >DGE: Direct Gaussian 3D Editing by Consistent Multi-view Editing</a></h2>
-
+          <img src="./static/images/application.png" width="98%" align="center"/>
           <video poster="" id="steve" autoplay controls muted loop playsinline height="100%" width="98%" >
             <source src="./static/videos/application/DGE/origin.mp4"
                     type="video/mp4">
